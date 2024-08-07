@@ -1,0 +1,219 @@
+body {
+    background: linear-gradient(135deg, #D8CFC4, #D8CFC4);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo-container {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.logo {
+    width: 85px;
+    height: auto;
+}
+
+.login-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-btn:hover {
+    background: linear-gradient(90deg, #feb47b, #ff7e5f);
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.heading {
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+    position: relative;
+}
+
+.title {
+    font-size: 5em;
+    font-weight: bold;
+    margin: 0;
+    background: linear-gradient(90deg, #778899, #2F4F4F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeInUp 1.5s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+.subtitle {
+    font-size: 2em;
+    margin: 0;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+.arrow-container {
+    position: absolute;
+    bottom: 5px; /* Adjusted position */
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.arrow {
+    font-size: 1.5em; /* Adjusted size */
+    color: #333;
+    animation: bounce 2s infinite;
+}
+
+.arroww-container {
+    position: absolute;
+    bottom: 5px; /* Adjusted position */
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.arroww {
+    font-size: 1em; /* Adjusted size */
+    color:#D8CFC4;
+    animation: bouncee 2s infinite;
+}
+
+.second-page {
+    position: fixed;
+    bottom: -100vh;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background: #CCB08F; /* Updated background color */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: bottom 0.7s;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Prevent overflow from large content */
+}
+
+.second-page-content {
+    text-align: center;
+}
+
+.microphone-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.microphone {
+    width: 100px;
+    height: 150px;
+    background: #333;
+    border-radius: 50% 50% 0 0;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.microphone::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: #333;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content-area {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.rope-container {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.rope {
+    width: 4px;
+    height: 500px;
+    background: linear-gradient(180deg, #af6e25, #af6e25); /* Matching color gradient */
+    transition: height 0.5s;
+    border-radius: 2px;
+}
+
+.rope-knot {
+    width: 16px;
+    height: 16px;
+    background: #af6e25;
+    border-radius: 50%;
+    margin-top: -8px;
+    transition: transform 1s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    60% {
+        transform: translateY(-7.5px);
+    }
+}
+
+@keyframes bouncee {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    60% {
+        transform: translateY(-7.5px);
+    }
+}

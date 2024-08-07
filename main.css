@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.project-title {
+    font-size: 2.5rem;
+    color: #333;
+    font-family: 'Georgia', serif; /* Unique and attractive font */
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+}
+
+.language-selector label {
+    margin-right: -118px;
+    margin-bottom: -70px;
+}
+
+#language {
+    padding: 5px;
+    font-size: 1rem;
+    margin-bottom: -120px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#text-area {
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
